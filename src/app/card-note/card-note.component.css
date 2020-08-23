@@ -1,0 +1,20 @@
+h5 {
+  display: block;
+  text-overflow: ellipsis;
+}
+
+.card .note-content {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex-grow: 1;
+}
+
+.card .note-date {
+  font-style: italic;
+  font-size: 9px;
+}
+
+.card svg.material-icons path {
+    fill: #888;
+  }
+

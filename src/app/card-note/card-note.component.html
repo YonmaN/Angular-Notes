@@ -1,0 +1,5 @@
+<div (click)="openEdit()" class="card">
+    <h5 (click)="onDelete()" class="note-author">(x)&nbsp;{{note.author}}</h5>
+    <div class="note-content">{{note.content}}</div>
+    <div class="note-date">{{note.created | date : 'short' }}</div>
+</div>

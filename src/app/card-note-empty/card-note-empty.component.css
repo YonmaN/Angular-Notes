@@ -1,0 +1,9 @@
+.card.empty-card {
+    align-items: center;
+    justify-content: center;
+    flex-direction: unset;
+}
+
+.card-no-content {
+    font-size: 82px;
+}

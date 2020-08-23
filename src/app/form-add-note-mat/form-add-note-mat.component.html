@@ -1,0 +1,19 @@
+<h2 mat-dialog-title>Your Note:</h2>
+
+<form mat-dialog-content [formGroup]="control">
+    <mat-form-field>
+        <label for="note-author">Author Name
+            <input  matNativeControl id="note-author" required formControlName="author"/></label>
+    </mat-form-field>
+    <mat-form-field>
+        <label mat-form-field for="note-content">What would you like to say?
+            <textarea  matNativeControl id="note-content"  required formControlName="content"></textarea></label>
+    </mat-form-field>
+
+</form>
+
+<mat-dialog-actions>
+    <button class="mat-raised-button" (click)="close()">Close</button>
+    <button class="mat-raised-button mat-primary" (click)="save()">Post</button>
+</mat-dialog-actions>
+

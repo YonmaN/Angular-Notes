@@ -1,0 +1,7 @@
+<div class="card-container">
+
+<app-card-note-empty (click)="openFormAddNote()"></app-card-note-empty>
+
+<app-card-note *ngFor="let note of notes.getNotes()" [note]="note" (noteDeleted)="deleteNote(note)" (contentClicked)="openFormEditNote(note)"></app-card-note>
+
+  </div>
